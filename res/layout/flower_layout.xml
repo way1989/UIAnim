@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+     >
+
+	
+	<RelativeLayout 
+	    android:id="@+id/rlt_animation_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    ></RelativeLayout>
+    
+	<Button 
+	    android:id="@+id/but_run"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="触发撒花"
+	    android:textColor="#ffffff"
+	    android:layout_centerHorizontal="true"
+	    android:layout_alignParentBottom="true"
+	    />
+    
+</RelativeLayout>

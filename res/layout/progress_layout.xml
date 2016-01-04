@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android_custom="http://schemas.android.com/apk/res/com.example.lqm.animation"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@anim/large_progressbar_animator"
+            android:indeterminateDuration="1000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:id="@+id/pbar_download"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="290dp"
+            android:layout_height="8dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_progressbar_n"
+            android:progressDrawable="@drawable/pb_style_bg" />
+
+        <Button
+            android:id="@+id/btn_pgbar_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:text="开始下载"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp" >
+
+        <ProgressBar
+            android:id="@+id/pbar_download_2"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="107dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_progressbar2_n"
+            android:progressDrawable="@drawable/pb_style_bg2" />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="下载"
+            android:textSize="20dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.example.lqm.animation.view.RoundProgressBar
+            android:id="@+id/roundProgressBar_1"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_margin="20dp"
+            android_custom:roundColor="#D1D1D1"
+            android_custom:roundProgressColor="@android:color/black"
+            android_custom:roundWidth="10dip"
+            android_custom:textColor="#9A32CD"
+            android_custom:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="变化进度"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <com.example.lqm.animation.view.RoundProgressBar
+        android:id="@+id/roundProgressBar_2"
+        android_custom:style="FILL"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_margin="20dp"
+        android_custom:roundProgressColor="#C2C2C2"
+        android_custom:roundWidth="1dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/fly_icon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:scaleType="fitXY"
+            android:src="@anim/dlg_wait_anim" />
+
+        <TextView
+            android:id="@+id/dlg_wait_message"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:gravity="center"
+            android:text="努力加载中..."
+            android:textColor="@android:color/black"
+            android:textSize="22sp" >
+        </TextView>
+        
+        <Button 
+            android:id="@+id/btn_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="开始变化"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>

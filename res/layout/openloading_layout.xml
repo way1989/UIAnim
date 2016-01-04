@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:dots="http://schemas.android.com/apk/res-auto"  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+ <!-- xmlns:dots="http://schemas.android.com/apk/res-auto"  DotsTextView动画
+      xmlns:app="http://schemas.android.com/apk/res-auto"  LoadingView -->   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:text="Loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="45sp" />
+
+        <com.example.lqm.animation.loadingview.DotsTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dots"
+            android:textSize="45sp"
+            android:textColor="@android:color/primary_text_light"
+            dots:autoplay="false"
+            dots:period="1000"/>
+
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="play/pause"
+        android:textSize="20sp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/buttonHide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show/hide"
+        android:textSize="20sp"
+        android:layout_below="@+id/buttonPlay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/buttonHideAndStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show/hide with pause"
+        android:textSize="20sp"
+        android:layout_below="@+id/buttonHide"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="20dp" />
+    
+    <com.example.lqm.animation.widget.LoadingView
+        android:id="@+id/loadView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="30dp"
+        app:loadingText="加载中..." />  
+        
+    <Button
+        android:id="@+id/button1"
+        android:text="View"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/button2"
+        android:text="Dialog"
+        android:textSize="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    
+    
+    
+    
+</LinearLayout>

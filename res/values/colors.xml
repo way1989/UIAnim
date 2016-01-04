@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="grey">#ff888888</color>
+    <color name="information_warning">#ffff7e00</color>
+    <color name="aqi_good_color">#ff5cbc06</color>
+    <color name="aqi_light_pollution_color">#ffff8b34</color>
+    <color name="aqi_unhealthy_color">#ffff8b34</color>
+    <color name="aqi_dangerous_color">#ffc92914</color>
+    <color name="aqi_hazardous_color">#ffc92914</color>
+    <color name="aqi_text_color">#ffb2b2b2</color>
+    <color name="trend_view_text_color_backup">#ff9a9a9a</color>
+    <color name="trend_view_text_color">#ff969798</color>
+    <color name="trend_view_weather_text_color">#ff969798</color>
+    <color name="trend_view_yellow_color">#fff07e18</color>
+    <color name="trend_view_blue_color">#ff1b9ce4</color>
+    <color name="trend_view_default_color">#ff000000</color>
+    
+    <color name="triangle">#aa72d572</color>
+    <color name="circle">#aa738ffe</color>
+    <color name="rect">#aae84e40</color>
+    <color name="view_bg">#00000000</color>
+    <color name="shadow">#25808080</color>
+    <color name="dialog_bg">#f5f5f5</color>
+    
+</resources>

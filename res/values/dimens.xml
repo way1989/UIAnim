@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+     <dimen name="weahter_trend_view_background_height">228.0dip</dimen>
+    <dimen name="weather_trend_view_horizonal_line_height">2.0dip</dimen>
+    <dimen name="weather_trend_view_vertical_line_width">1.0dip</dimen>
+    <dimen name="weahter_trend_view_height">260.0dip</dimen>
+    <dimen name="weahter_and_city_view_padding_bottom">20.0dip</dimen>
+    <dimen name="weahter_trend_view_margin_left_and_right">28.0dip</dimen>
+    <dimen name="weather_trend_edge_value">36.0dip</dimen>
+    <dimen name="weather_trend_temp_text_size">12.0sp</dimen>
+    <dimen name="weather_trend_date_text_size">14.0sp</dimen>
+    <dimen name="weather_trend_weather_text_size">12.0sp</dimen>
+    
+</resources>
